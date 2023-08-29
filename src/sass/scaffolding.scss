@@ -1,0 +1,15 @@
+body {
+  background-color: $background;
+
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+}
+
+.container {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
