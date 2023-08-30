@@ -1,0 +1,24 @@
+@mixin galien {
+  font-family: $galien;
+}
+
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin reset-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin button {
+  padding: 15px 48px;
+  border-radius: 10px;
+  background: var(--blue-04, #5A98D0);
+  box-shadow: 5px 10px 20px 0 rgba(53, 110, 173, 20%);
+  cursor: pointer;
+  color: $text-white;
+}

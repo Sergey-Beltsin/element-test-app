@@ -1,15 +1,16 @@
 body {
   background-color: $background;
-
-  font-family: 'Gilroy', sans-serif;
+  font-family: $gilroy;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0.8px;
+  color: $text;
 }
 
 .container {
+  position: relative;
   width: 100%;
-  max-width: 860px;
+  max-width: 940px;
   margin: 0 auto;
 }

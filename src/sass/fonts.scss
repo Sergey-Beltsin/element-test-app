@@ -1,26 +1,23 @@
 @font-face {
   font-weight: 700;
-  font-family: "Galien";
+  font-family: Galien;
   font-style: normal;
   font-display: swap;
-
-  src: local("Galien"), url("../assets/fonts/Galien/Bold/Galien-Bold.ttf") format("ttf");
+  src: local("Galien"), url("../assets/fonts/Galien/Bold/Galien-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 400;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   font-style: normal;
   font-display: swap;
-
   src: local("Gilroy"), url("../assets/fonts/Gilroy/Regular/Gilroy-Regular.woff2") format("woff2"), url("../assets/fonts/Gilroy/Regular/Gilroy-Regular.woff") format("woff");
 }
 
 @font-face {
   font-weight: 600;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   font-style: normal;
   font-display: swap;
-
   src: local("Gilroy"), url("../assets/fonts/Gilroy/SemiBold/Gilroy-SemiBold.woff2") format("woff2"), url("../assets/fonts/Gilroy/SemiBold/Gilroy-SemiBold.woff") format("woff");
 }

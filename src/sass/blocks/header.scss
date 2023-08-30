@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+
+.header--background {
+  background-color: $background;
+}
+
+.header__menu {
+  @include reset-button;
+}

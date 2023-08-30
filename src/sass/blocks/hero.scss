@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  padding: 60px 0 190px;
+}
+
+.hero__cover {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.2;
+  background: linear-gradient(0deg, #98C3E8 28.39%, rgba(152, 195, 232, 0%) 100%);
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+}
+
+.hero__title {
+  @include galien;
+
+  margin: 0 0 32px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  letter-spacing: 2.56px;
+}
+
+.hero__descr {
+  margin: 0 0 72px;
+  opacity: 0.6;
+}
+
+.hero__action {
+  @include reset-link;
+  @include button;
+}
+
+.hero__img {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+  bottom: 14px;
+  right: -176px;
+  width: 100%;
+  max-width: 680px;
+}
