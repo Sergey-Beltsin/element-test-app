@@ -43,6 +43,16 @@
   position: absolute;
   top: 20px;
   right: 20px;
+
+  @media (max-width: 500px) {
+    top: 6px;
+    right: 6px;
+
+    & > svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .modal__title {
