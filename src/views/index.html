@@ -19,23 +19,149 @@
 
     <section class="hero">
       <div class="hero__cover"></div>
-      <div class="container">
-        <div class="hero__content">
-          <div>
-            <h1 class="hero__title">
-              New Automation <br />
-              Tool for Your Home
-            </h1>
-            <p class="hero__descr">
-              Lorem ipsum dolor sit amet, consectetur adipiscing <br />
-              elit. Faucibus tristique vulputate ultrices ut mauris <br />
-              tellus at. Posuere sollicitudin odio tellus elit.
+      <div class="hero__container container">
+        <div>
+          <h1 class="hero__title">
+            New Automation <br />
+            Tool for Your Home
+          </h1>
+          <p class="hero__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+            elit. Faucibus tristique vulputate ultrices ut mauris <br />
+            tellus at. Posuere sollicitudin odio tellus elit.
+          </p>
+          <a href="#" class="hero__action">See Our Project</a>
+        </div>
+        <img class="hero__img" src="./assets/img/content/hero-image.png" alt="" />
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__container container">
+        <div class="advantages__title__wrapper">
+          <h3 class="advantages__title">
+            What we do to help <br />
+            our client grow in <br />
+            digital era,
+          </h3>
+
+          <div class="advantages__card">
+            <img class="advantages__card__img" src="./assets/img/content/advantages-1.png" alt="" />
+            <h4 class="advantages__card__title">Make Your business To Be Better Famous In Internet</h4>
+            <p class="advantages__card__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
             </p>
-            <a href="#" class="hero__action">See Our Project</a>
+            <a href="#" class="advantages__card__link">
+              Learn more
+              <svg width="24" height="24">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </a>
           </div>
-          <img class="hero__img" src="./assets/img/content/hero-image.png" alt="" />
+        </div>
+        <div>
+          <div class="advantages__card advantages__card--big-image">
+            <img class="advantages__card__img" src="./assets/img/content/advantages-2.png" alt="" />
+            <h4 class="advantages__card__title">Bring Technology To Your Comfrotable Home</h4>
+            <p class="advantages__card__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            <a href="#" class="advantages__card__link">
+              Learn more
+              <svg width="24" height="24">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages__card__img" src="./assets/img/content/advantages-3.png" alt="" />
+            <h4 class="advantages__card__title">Build Your Digital Product That Suitable For Your Need</h4>
+            <p class="advantages__card__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            <a href="#" class="advantages__card__link">
+              Learn more
+              <svg width="24" height="24">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="clients">
+      <div class="clients__container">
+        <div class="clients__header">
+          <h3 class="clients__header__title">
+            Our Beloved <br />
+            Client
+          </h3>
+          <p class="clients__header__descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br />
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br />
+            enim ad minim veniam.
+          </p>
+        </div>
+
+        <div class="clients__content">
+          <a href="#" class="clients__card">LOGO CLIENT 1</a>
+          <a href="#" class="clients__card">LOGO CLIENT 2</a>
+          <a href="#" class="clients__card">LOGO CLIENT 3</a>
+          <a href="#" class="clients__card">LOGO CLIENT 4</a>
+          <a href="#" class="clients__card">LOGO CLIENT 5</a>
+          <a href="#" class="clients__card">LOGO CLIENT 6</a>
+          <a href="#" class="clients__card">LOGO CLIENT 7</a>
+          <a href="#" class="clients__card clients__card--dark-bg">More Client</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close" type="button">
+          <svg width="24" height="24">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+
+        <h3 class="modal__title modal__title--main">Send us message</h3>
+        <h3 class="modal__title modal__title--success modal__title--hidden modal__title--align-center">
+          Your message successfully sent
+        </h3>
+
+        <form class="modal__contact-form contact-form">
+          <label class="contact-form__label">
+            Full Name
+            <input type="text" name="fullName" class="contact-form__input" placeholder="Your Name" />
+            <span class="contact-form__error contact-form__error--full-name">Full name is required field</span>
+          </label>
+          <label class="contact-form__label">
+            Email
+            <input type="text" name="email" class="contact-form__input" placeholder="Your Email" />
+            <span class="contact-form__error contact-form__error--email">Email is required field</span>
+          </label>
+          <label class="contact-form__label">
+            Message
+            <textarea
+              type="text"
+              class="contact-form__input contact-form__input--textarea"
+              placeholder="Your Message"
+              name="message"
+            ></textarea>
+            <span class="contact-form__error contact-form__error--message">Message is required field</span>
+          </label>
+
+          <button class="contact-form__action" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    @@include('../components/footer.html')
   </body>
+
+  <script src="./js/main.js"></script>
 </html>

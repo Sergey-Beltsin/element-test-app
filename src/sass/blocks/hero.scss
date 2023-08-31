@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   padding: 60px 0 190px;
+  margin-bottom: 180px;
 }
 
 .hero__cover {
@@ -11,7 +12,9 @@
   background: linear-gradient(0deg, #98C3E8 28.39%, rgba(152, 195, 232, 0%) 100%);
 }
 
-.hero__content {
+.hero__container {
+  @include container;
+
   display: flex;
   align-items: center;
 }

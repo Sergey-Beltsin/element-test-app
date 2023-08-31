@@ -11,10 +11,6 @@
   padding: 40px 10px;
 }
 
-.header--background {
-  background-color: $background;
-}
-
 .header__menu {
   @include reset-button;
 }

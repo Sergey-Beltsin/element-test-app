@@ -26,6 +26,9 @@ gulp.task("watch", () => {
   });
   gulp.watch("src/sass/**/*.scss", gulp.series("minify-css"));
   gulp.watch("src/**/*.html", gulp.series("minify"));
+  gulp.watch("src/assets/img/**/*.{png,jpg}", gulp.series("images", "copy"));
+  gulp.watch("src/assets/img/icons/icon-*.svg", gulp.series("sprite"));
+  gulp.watch("src/js/*.js", gulp.series("minify-js"));
 });
 
 // Minify CSS/HTML/JS
@@ -72,7 +75,7 @@ gulp.task("images", () =>
   gulp
     .src("src/assets/img/**/*.{png,jpg}")
     .pipe(imagemin([imagemin.mozjpeg({ quality: 75, progressive: true }), imagemin.optipng({ optimizationLevel: 5 })]))
-    .pipe(gulp.dest("src/img")),
+    .pipe(gulp.dest("src/assets/img")),
 );
 
 gulp.task("sprite", () =>

@@ -15,10 +15,48 @@
 }
 
 @mixin button {
+  @include reset-button;
+
   padding: 15px 48px;
   border-radius: 10px;
-  background: var(--blue-04, #5A98D0);
+  background-color: $accent;
   box-shadow: 5px 10px 20px 0 rgba(53, 110, 173, 20%);
   cursor: pointer;
+  line-height: 26px;
+  letter-spacing: 0.64px;
   color: $text-white;
+  transition: 0.2s ease-in-out;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+}
+
+@mixin container {
+  position: relative;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@mixin input {
+  padding: 21px 36px;
+  outline: none;
+  border: 1px solid rgba(53, 110, 173, 0.4);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.64px;
+  font-family: $gilroy;
+
+  &::placeholder,
+  &::-moz-placeholder {
+    font-family: $gilroy;
+    color: $text;
+    opacity: 0.4;
+  }
 }

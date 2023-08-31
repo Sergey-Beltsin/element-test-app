@@ -1,0 +1,58 @@
+.modal__content {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 110px auto 100px;
+  padding: 40px;
+  background-color: $background;
+  border-radius: 10px;
+  cursor: default;
+  transition: 0.2s ease-in-out;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  overflow: auto;
+  transition: 0.2s ease-in-out;
+
+  &--opened {
+    opacity: 1;
+    visibility: visible;
+
+    & > .modal__content {
+      margin-top: 100px;
+    }
+  }
+}
+
+.modal__close {
+  @include reset-button;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__title {
+  margin: 0 0 48px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--align-center {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

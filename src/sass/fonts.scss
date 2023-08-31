@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-weight: 300;
+  font-family: Gilroy;
+  font-style: normal;
+  font-display: swap;
+  src: local("Gilroy"), url("../assets/fonts/Gilroy/Light/Gilroy-Light.woff2") format("woff2"), url("../assets/fonts/Gilroy/Light/Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
   font-weight: 400;
   font-family: Gilroy;
   font-style: normal;
