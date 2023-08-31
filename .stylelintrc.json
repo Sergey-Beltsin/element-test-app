@@ -5,6 +5,7 @@
     "selector-class-pattern": null,
     "color-function-notation": null,
     "alpha-value-notation": null,
-    "selector-no-vendor-prefix": null
+    "selector-no-vendor-prefix": null,
+    "media-feature-range-notation": null
   }
 }

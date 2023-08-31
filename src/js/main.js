@@ -10,6 +10,8 @@ const mainTitle = document.querySelector(".modal__title--main");
 const successTitle = document.querySelector(".modal__title--success");
 const contactFormAction = document.querySelector(".contact-form__action");
 
+const EMAIL_REGEX = /^[\w.-]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
 const lockBodyScroll = () => {
   document.body.classList.add("scroll-lock");
 };
@@ -31,19 +33,15 @@ const handleCloseModal = () => {
   unlockBodyScroll();
 };
 
-footerAction.addEventListener("click", handleOpenModal);
-
-closeModal.addEventListener("click", handleCloseModal);
-
-modal.addEventListener("click", (event) => {
+const handleClickModal = (event) => {
   if (modalContent.contains(event.target)) {
     return;
   }
 
   handleCloseModal();
-});
+};
 
-contactForm.addEventListener("submit", (event) => {
+const onSubmitForm = (event) => {
   event.preventDefault();
 
   const formData = new FormData(event.target);
@@ -57,7 +55,7 @@ contactForm.addEventListener("submit", (event) => {
     fullNameError.classList.remove("contact-form__error--visible");
   }
 
-  if (email.length < 4) {
+  if (!EMAIL_REGEX.test(email)) {
     emailError.classList.add("contact-form__error--visible");
     isError = true;
   } else {
@@ -89,4 +87,12 @@ contactForm.addEventListener("submit", (event) => {
     .finally(() => {
       contactFormAction.disabled = false;
     });
-});
+};
+
+footerAction.addEventListener("click", handleOpenModal);
+
+closeModal.addEventListener("click", handleCloseModal);
+
+modal.addEventListener("click", handleClickModal);
+
+contactForm.addEventListener("submit", onSubmitForm);

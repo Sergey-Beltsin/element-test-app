@@ -4,16 +4,22 @@
   max-width: 600px;
   margin: 110px auto 100px;
   padding: 40px;
+  box-sizing: border-box;
   background-color: $background;
   border-radius: 10px;
   cursor: default;
   transition: 0.2s ease-in-out;
+
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
 }
 
 .modal {
   position: fixed;
   inset: 0;
   z-index: 100;
+  padding: 0 10px;
   opacity: 0;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.4);

@@ -2,6 +2,11 @@
   position: relative;
   padding: 60px 0 190px;
   margin-bottom: 180px;
+
+  @media (max-width: 920px) {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .hero__cover {
@@ -17,6 +22,10 @@
 
   display: flex;
   align-items: center;
+
+  @media (max-width: 920px) {
+    display: grid;
+  }
 }
 
 .hero__title {
@@ -27,11 +36,32 @@
   font-weight: 700;
   line-height: 74px;
   letter-spacing: 2.56px;
+
+  @media (max-width: 920px) {
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 .hero__descr {
   margin: 0 0 72px;
   opacity: 0.6;
+
+  @media (max-width: 920px) {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
+.hero__action__wrapper {
+  @media (max-width: 920px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero__action {
@@ -47,4 +77,19 @@
   right: -176px;
   width: 100%;
   max-width: 680px;
+
+  @media (max-width: 1300px) {
+    right: -100px;
+    max-width: 600px;
+  }
+
+  @media (max-width: 1150px) {
+    right: 0;
+    max-width: 500px;
+  }
+
+  @media (max-width: 920px) {
+    position: static;
+    margin: 40px auto 0;
+  }
 }
